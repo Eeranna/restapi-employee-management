@@ -2,6 +2,8 @@ package corejava;
 
 public class FindSmallestMissing {
 
+    //aab - a2 b1
+
     // Function to find the smallest missing element in a sorted
     // array of distinct non-negative integers
     public static int findSmallestMissing(int[] nums, int left, int right) {
