@@ -15,14 +15,14 @@ public class EmployeeService {
     private static int usersCount = 4;
 
     static {
-        employees.add(new Employee(1,"Eeranna", "Kuruva", "eeranna@gmail.com"));
-        employees.add(new Employee(2,"Dena", "Geetha", "eeranna@gmail.com"));
-        employees.add(new Employee(3,"Tejas", "Kuruva", "eeranna@gmail.com"));
-        employees.add(new Employee(4,"Charith", "Kuruva", "eeranna@gmail.com"));
-        employees.add(new Employee(5,"Ranga", "Kuruva", "ranga@gmail.com"));
-        employees.add(new Employee(6,"Maha", "Laxmi", "maha@gmail.com"));
-        employees.add(new Employee(7,"Charan", "Teja", "charan@gmail.com"));
-        employees.add(new Employee(8,"Mounika", "Kuruva", "mounika@gmail.com"));
+        employees.add(new Employee(1,"Eeranna", "Kuruva", "eeranna@gmail.com","Bangalore"));
+        employees.add(new Employee(2,"Dena", "Geetha", "eeranna@gmail.com","Bangalore"));
+        employees.add(new Employee(3,"Tejas", "Kuruva", "eeranna@gmail.com","Bangalore"));
+        employees.add(new Employee(4,"Charith", "Kuruva", "eeranna@gmail.com","Bangalore"));
+        employees.add(new Employee(5,"Ranga", "Kuruva", "ranga@gmail.com","Kurnool"));
+        employees.add(new Employee(6,"Maha", "Laxmi", "maha@gmail.com","Kurnool"));
+        employees.add(new Employee(7,"Charan", "Teja", "charan@gmail.com","Kurnool"));
+        employees.add(new Employee(8,"Mounika", "Kuruva", "mounika@gmail.com","Kurnool"));
     }
 
     public List<Employee> getEmployees() {
@@ -47,6 +47,7 @@ public class EmployeeService {
         employee.setFirstName(emp.getFirstName());
         employee.setLastName(emp.getLastName());
         employee.setEmailId(emp.getEmailId());
+        employee.setAddress(emp.getAddress());
         return employee;
     }
 

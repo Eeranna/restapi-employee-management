@@ -9,4 +9,8 @@ public class Student1 {
         this.name=name;
         this.age=age;
     }
+    Student1() {}
+    public String getMyName() {
+        return "Welcome Eeranna";
+    }
 }
